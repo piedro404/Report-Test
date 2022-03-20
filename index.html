@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Genshin Impact - Entre nesse Vasto Mundo Mágico de Aventura</title>
+    <link rel="icon" type="icon/jpg" href="imagens/icon.jpg">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="https://genshin.hoyoverse.com/"><img src="imagens/logo.png"
+          alt="Logo de Genshin Impact" /></a>
+
+      <nav>
+        <ul>
+          <li><a href="https://genshin.hoyoverse.com/pt/home">Home</a></li>
+          <li><a href="https://genshin.hoyoverse.com/pt/download">Download</a></li>
+          <li><a href="https://genshin.hoyoverse.com/pt/game">Sobre</a></li>
+          <li><a
+              href="https://genshin.hoyoverse.com/pt/character/mondstadt">Personagens</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="hero">
+      <h1 class="text-center">Report Service</h1>
+      <p class="text-center">What is your problem?</p>
+      <form id="survey" onsubmit="cadastrarDados()">
+        <fieldset class="form-group">
+          <label for="name">Your Nickname: </label><input type="text"
+            id="name" name="name" placeholder="Ex: PiedroCraft"
+            required class="form-control">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="email">Email: </label><input type="email"
+            id="email" name="email" placeholder="Ex:
+            email@gmail.com" required class="form-control">
+        </fieldset>
+        <fieldset class="form-group">
+          <p>Report reason:</p>
+          <select id="reason" name="reason" class="form-reason"
+            onchange="selects()" required>
+            <option value select disabled>Select the problem</option>
+            <option value="bug">Bug</option>
+            <option value="hack">Hack</option>
+            <option value="offw">Offensive Words</option>
+            <option value="ping">Ping Oscillating</option>
+          </select>
+        </fieldset>
+        <!-- Hack and Offenses -->
+        <fieldset class="form-groups-option1" id="form1">
+          <div id="form1">
+            <p>Accused Player</p>
+            <label for="player">Nickname of the accused player:
+            </label><input type="text" id="input1" id="player"
+              name="player" placeholder="Ex: AlonesForever"
+              class="form-control">
+          </div>
+          <div id="form1">
+            <label for="id">ID of the accused player: </label><input
+              type="number" id="input1" id="id" name="id"
+              placeholder="Ex: 012345678" step="0" length="8"
+              class="form-control">
+          </div>
+        </fieldset>
+        <!-- No Ping Oscillating -->
+        <fieldset class="form-groups-option-no2" id="form5">
+          <p>Select the Files: </p>
+          <input type="file" id="files" id="input3" name="files"
+            class="file" accept=".jpg, .jpeg, .png" multiple
+            class="form-group file">
+        </fieldset>
+        <!-- Bug -->
+        <fieldset class="form-groups-option3" id="form4">
+          <p>Descrition for the bug</p>
+          <textarea id="bug" id="input4" name="bug" class="textarea"
+            placeholder="Enter bug details here..."></textarea>
+        </fieldset>
+        <!-- Ping Oscillating -->
+        <fieldset class="form-group1" id="form2">
+          <p>Which server the problem was encountered?</p>
+          <div class="form-groups-option2" id="form3">
+            <label><input name="server" id="input1" id="input2"
+                value="na" type="radio" class="radio" charset>N.A</label>
+            <label><input name="server" id="input1" id="input2"
+                value="sa" type="radio" class="radio" charset>S.A</label>
+            <label><input name="server" id="input1" id="input2"
+                value="eu" type="radio" class="radio" charset>Europa</label>
+            <label><input name="server" id="input1" id="input2"
+                value="asia" type="radio" class="radio" charset>Asia</label>
+            <label><input name="server" id="input1" id="input2"
+                value="africa" type="radio" class="radio"
+                charset>Africa</label>
+          </div></fieldset>
+        <fieldset class="form-group">
+          <button type="submit" id="submit">Submit Report</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
