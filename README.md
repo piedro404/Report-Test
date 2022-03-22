@@ -1,6 +1,12 @@
 # Report-Test
 Simple HTML + CSS + Javascript implementation test, with Genshin Impact game theme
 
+## Details:
+I used a Google Fonts font for this project, so don't forget to add this import in your CSS
+```
+@import url('https://fonts.googleapis.com/css2? família=Lato:wght@900&display=swap');
+```
+
 # Message for you
 Hello, I hope you have a good learning experience, that you can clear your doubts or implement your projects. Feel free to make suggestions to improve the script.
 
