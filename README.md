@@ -1,6 +1,8 @@
 # Report-Test
 Simple HTML + CSS + Javascript implementation test, with Genshin Impact game theme
 
+https://piedrocraft.github.io/Report-Test/
+
 ## Details:
 I used a Google Fonts font for this project, so don't forget to add this import in your CSS
 ```
